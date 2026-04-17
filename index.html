@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pavan Mortha | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    background: #020617;
+    padding: 15px 0;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* SECTION */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #1e293b;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #38bdf8;
+}
+
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* LINKS */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header>
+<h1>Pavan Mortha</h1>
+<p>Data Science Undergraduate | AI & Machine Learning</p>
+
+<a href="Pavan_Mortha_Resume.pdf" download class="btn">Download Resume</a>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a Data Science undergraduate specializing in Artificial Intelligence and Computer Vision.
+I build machine learning models and deploy real-time applications using Python and Streamlit.
+I focus on solving real-world problems using data-driven approaches.
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span>Python</span>
+<span>Machine Learning</span>
+<span>Deep Learning</span>
+<span>TensorFlow</span>
+<span>Keras</span>
+<span>OpenCV</span>
+<span>NumPy</span>
+<span>Pandas</span>
+<span>Matplotlib</span>
+<span>Scikit-learn</span>
+<span>React</span>
+<span>Django</span>
+<span>AWS</span>
+<span>MySQL</span>
+<span>MongoDB</span>
+<span>Git & GitHub</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="projects">
+
+<!-- Deepfake -->
+<div class="card">
+<div class="gallery">
+<img src="images/deepfake/deepfake1.png">
+<img src="images/deepfake/deepfake2.png">
+<img src="images/deepfake/deepfake3.png">
+<img src="images/deepfake/deepfake4.png">
+</div>
+<h3>Deepfake Detection</h3>
+<p>Deep learning model using EfficientNetB4 to detect manipulated images.</p>
+<a href="https://github.com/pavan2k06" target="_blank">View Project →</a>
+</div>
+
+<!-- Plant -->
+<div class="card">
+<h3>Plant Disease Detection</h3>
+<p>Multi-class model detecting plant diseases across 38 categories.</p>
+<a href="https://github.com/pavan2k06/Plant-Leaf-Disease-Detection-Using-DeepLearning-New" target="_blank">
+View Project →
+</a>
+</div>
+
+<!-- Email -->
+<div class="card">
+<h3>Email Scheduler</h3>
+<p>
+Built an automated email scheduling system using Python to send emails at predefined times,
+improving task automation and productivity.
+</p>
+<a href="https://github.com/pavan2k06/email-scheduler" target="_blank">
+View Project →
+</a>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: pawan.mortha@gmail.com</p>
+<p>
+<a href="https://github.com/pavan2k06" target="_blank">GitHub</a> |
+<a href="https://www.linkedin.com/in/mortha-pavan" target="_blank">LinkedIn</a>
+</p>
+</section>
+
+<footer>
+<p>© 2026 Pavan Mortha</p>
+</footer>
+
+</body>
+</html>
